@@ -1,7 +1,12 @@
 package Entity;
 
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -21,9 +26,6 @@ public class Answer {
 
     private LocalDateTime createDate;
 
-    @ManyToOne  //질문이랑 연결
+    @ManyToOne // N:1 , Answer 엔티티의 question 속성과 Question 엔티티가 서로 연결
     private Question question;
-
-
-
 }
