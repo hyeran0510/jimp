@@ -1,24 +1,29 @@
 package Entity;
 
 
-import com.fasterxml.jackson.annotation.JsonTypeId;
+
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Getter
 @Setter
+@Entity
 
 public class Question {
 
-    @id
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    @Column
+    @Column(length = 200)
     private String subject;
+    @Column(columnDefinition = "TEXT")
     private String content;
     private LocalDateTime createDate;
 
+    @OneToMany(mappedBy = "question", cascade = CascadeType.REMOVE) //질문을 삭제하면 답변도 같ㅇ티 삭제되게
+    private List<Answer> answers;
 
 }
