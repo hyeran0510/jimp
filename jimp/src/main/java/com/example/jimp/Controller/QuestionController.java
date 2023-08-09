@@ -1,16 +1,17 @@
 package com.example.jimp.Controller;
 
+import java.util.List;
+
 import Entity.Question;
 import Repository.QuestionRepository;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 
-
-import java.util.List;
+import lombok.RequiredArgsConstructor;
 
 @RequiredArgsConstructor
 @Controller
+
 public class QuestionController {
 
     private final QuestionRepository questionRepository;
@@ -20,3 +21,4 @@ public class QuestionController {
         return "question_list";
     }
 }
+

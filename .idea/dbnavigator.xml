@@ -6,14 +6,15 @@
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
-    <autoscroll-to-editor value="false" />
+    <autoscroll-to-editor value="true" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
     <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="57366587-70b7-442a-9140-c80b44ee2cf7">
-      <console name="Connection" type="STANDARD" schema="answer" session="Main" />
+      <console name="Connection" type="STANDARD" schema="question" session="Main" />
+      <console name="mysql" type="STANDARD" schema="mysql" session="Main" />
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -29,11 +30,14 @@
     <last-used-operator value="EQUAL" />
     <filters />
   </component>
+  <component name="DBNavigator.Project.ParserDiagnosticsManager">
+    <diagnostics-history />
+  </component>
   <component name="DBNavigator.Project.Settings">
     <connections>
       <connection id="57366587-70b7-442a-9140-c80b44ee2cf7" active="true" signed="true">
         <database>
-          <name value="Connection" />
+          <name value="mysql" />
           <description value="" />
           <database-type value="MYSQL" />
           <config-type value="BASIC" />
