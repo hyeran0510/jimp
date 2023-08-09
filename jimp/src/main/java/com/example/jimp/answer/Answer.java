@@ -1,6 +1,7 @@
-package Entity;
+package com.example.jimp.answer;
 
 
+import com.example.jimp.question.Question;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;

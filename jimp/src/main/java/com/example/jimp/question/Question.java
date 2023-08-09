@@ -1,13 +1,12 @@
-package Entity;
+package com.example.jimp.question;
 
-
+import com.example.jimp.answer.Answer;
 import jakarta.persistence.*;
 
 import lombok.Getter;
 import lombok.Setter;
 import java.time.LocalDateTime;
 import java.util.List;
-
 
 @Getter
 @Setter
@@ -25,5 +24,6 @@ public class Question {
 
     @OneToMany(mappedBy = "question",cascade = CascadeType.REMOVE) //질문을 삭제하면 답변도 같이 삭제되게
     private List<Answer> answerList;
-
 }
+
+

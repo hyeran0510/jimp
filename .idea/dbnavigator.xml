@@ -13,7 +13,6 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="57366587-70b7-442a-9140-c80b44ee2cf7">
-      <console name="Connection" type="STANDARD" schema="question" session="Main" />
       <console name="mysql" type="STANDARD" schema="mysql" session="Main" />
     </connection>
   </component>
