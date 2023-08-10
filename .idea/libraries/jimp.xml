@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="jimp">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/jimp/src/main/java" />
+      <root url="file://$PROJECT_DIR$/jimp/src/test/java" />
+    </SOURCES>
+  </library>
+</component>
