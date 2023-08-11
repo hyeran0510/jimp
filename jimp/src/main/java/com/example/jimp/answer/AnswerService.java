@@ -9,20 +9,20 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.time.LocalDateTime;
+
 @RequiredArgsConstructor
 @Service
 
 public class AnswerService {
-    private final QuestionService questionService;
-    private final AnswerService answerService;
-
-    @PostMapping("/create/{id}")
-    public String createAnswer(Model model, @PathVariable("id") Integer id, @RequestParam String content) {
-        Question question = this.questionService.getQuestion(id);
-        this.answerService.create(question, content);
-        return String.format("redirect:/question/detail/%s", id);
-    }
-
+    private final AnswerRepository answerRepository;
+    public void create(Question question, String content) {
+        Answer answer = new Answer();
+        answer.setContent(content);
+        answer.setCreateDate(LocalDateTime.now());
+        answer.setQuestion(question);
+        this.answerRepository.save(answer);
     }
 
 }
+
