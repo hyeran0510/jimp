@@ -3,19 +3,24 @@ package com.example.jimp.answer;
 
 import com.example.jimp.question.Question;
 import jakarta.persistence.*;
+import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
 
 import java.time.LocalDateTime;
+
 
 @Getter
 @Setter
 @Entity
-@Table(name="root", schema = "Answer" )
+@Table
 public class Answer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Integer id;
 
     @Column(columnDefinition = "TEXT")
