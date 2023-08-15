@@ -22,6 +22,10 @@
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="57366587-70b7-442a-9140-c80b44ee2cf7" dataset="answer.answer" active-filter-id="" />
+    <filter-actions connection-id="57366587-70b7-442a-9140-c80b44ee2cf7" dataset="answer.question" active-filter-id="" />
+  </component>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
   </component>
